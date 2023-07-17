@@ -1,5 +1,22 @@
 let arr = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47];
 
+console.log ("Знайти суму та кількість позитивних елементів.");
+
+let sum = 0;
+let result = 0;
+
+for (let i = 0; i < arr.length; i++ )  {
+
+    if (arr [i] > 0) {
+
+    sum += arr[i];     
+    result += 1;
+
+    }
+}
+
+console.log (sum + ", " + result);
+
 let minNumber = Math.min (...arr);
 
 function minValue (value) {return value === minNumber;}
@@ -17,7 +34,7 @@ console.log ("Максимальне значення: " + maxNumber, " Поря
 
 console.log  ("Визначити кількість негативних елементів.");
 
-let result = 0;
+result = 0;
 
 for (let i = 0; i < arr.length; i++ )  {
 
@@ -63,7 +80,7 @@ console.log (result);
 
 console.log ("Знайти суму парних позитивних елементів.");
 
-let sum = 0;
+sum = 0;
 
 for (let i = 0; i < arr.length; i++ )  {
 
